@@ -77,6 +77,8 @@ public class Controller{
         cmbRarity.setItems( rarity );
         cmbRarity.setValue("All");
 
+        refresh();
+
     }
 
     public void refresh(){

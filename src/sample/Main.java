@@ -13,7 +13,10 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Cartes Magic");
-        primaryStage.setScene(new Scene(root, 500, 500));
+        Scene scene = new Scene(root, 1070, 780);
+        primaryStage.setMinHeight( 780 );
+        primaryStage.setMinWidth( 1070 );
+        primaryStage.setScene( scene );
         primaryStage.show();
 
     }
