@@ -8,6 +8,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.image.ImageView?>
@@ -15,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="780.0" maxWidth="1070.0" prefHeight="780.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.102-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<VBox maxHeight="780.0" maxWidth="1070.0" prefHeight="780.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <MenuBar prefHeight="47.0" prefWidth="645.0">
          <menus>
@@ -64,16 +65,16 @@
                   <HBox prefHeight="232.0" prefWidth="556.0">
                      <children>
                         <ImageView fx:id="ivDetail" fitHeight="476.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" />
-                        <VBox prefHeight="474.0" prefWidth="161.0">
+                        <VBox minWidth="-Infinity" prefHeight="476.0" prefWidth="166.0">
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="COLORS" />
                               <ListView fx:id="lvColorsDetail" prefHeight="278.0" prefWidth="124.0" />
                            </children>
                         </VBox>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
+                        <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                              <Text fx:id="tTextDetail" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <TextArea fx:id="taTextCard" editable="false" wrapText="true" />
                            </children>
                         </VBox>
                      </children>

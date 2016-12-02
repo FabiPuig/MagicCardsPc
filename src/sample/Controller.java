@@ -20,7 +20,7 @@ public class Controller{
     public TextField tvRarityDetail;
     public ImageView ivDetail;
     public ListView lvColorsDetail;
-    public Text tTextDetail;
+    public TextArea taTextCard;
     @FXML
     private ComboBox cmbRarity;
     @FXML
@@ -190,7 +190,8 @@ public class Controller{
             lvColorsDetail.setPrefHeight( col.size() * ROW_HEIGHT + 2);
         }
 
-        //tTextDetail.setText( c.getText() );
+        taTextCard.setText( c.getText() );
+
 
     }
 }
