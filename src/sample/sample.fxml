@@ -11,6 +11,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <VBox maxHeight="780.0" maxWidth="1070.0" prefHeight="780.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
@@ -19,8 +20,18 @@
         <items>
           <Button fx:id="refreshAct" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
             <Separator orientation="VERTICAL" prefWidth="40.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT RARITY" textAlignment="CENTER" wrappingWidth="150.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
             <ComboBox fx:id="cmbRarity" prefWidth="150.0" promptText="All" />
             <Separator orientation="VERTICAL" prefWidth="40.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT COLORS" textAlignment="CENTER" wrappingWidth="150.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
             <CheckBox fx:id="cbAll" mnemonicParsing="false" onAction="#cbAllAct" prefWidth="55.0" text="All" />
             <CheckBox fx:id="cbRed" mnemonicParsing="false" onAction="#cbRedAct" prefWidth="55.0" text="Red" />
             <CheckBox fx:id="cbBlue" mnemonicParsing="false" onAction="#cbBlueAct" prefWidth="60.0" text="Blue" />
@@ -31,28 +42,43 @@
       </ToolBar>
       <HBox prefHeight="590.0" prefWidth="537.0" VBox.vgrow="ALWAYS">
          <children>
-            <ListView fx:id="lvCartes" maxWidth="-Infinity" onMouseClicked="#verDatos" prefHeight="542.0" prefWidth="406.0" />
+            <ListView fx:id="lvCartes" maxWidth="-Infinity" onMouseClicked="#verDatos" prefHeight="740.0" prefWidth="313.0" />
             <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
                   <TextField fx:id="tvNameDetail" VBox.vgrow="ALWAYS" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
                   <TextField fx:id="tvTypeDetail" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RARITY" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RARITY">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
                   <TextField fx:id="tvRarityDetail" />
                   <HBox prefHeight="232.0" prefWidth="556.0">
                      <children>
                         <ImageView fx:id="ivDetail" fitHeight="476.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" />
                         <VBox minWidth="-Infinity" prefHeight="476.0" prefWidth="166.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="COLORS" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="COLORS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Text>
                               <ListView fx:id="lvColorsDetail" prefHeight="278.0" prefWidth="124.0" />
                            </children>
                         </VBox>
-                        <VBox>
+                        <VBox HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                              <TextArea fx:id="taTextCard" editable="false" wrapText="true" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TEXT">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Text>
+                              <TextArea fx:id="taTextCard" editable="false" wrapText="true" VBox.vgrow="ALWAYS" />
                            </children>
                         </VBox>
                      </children>
