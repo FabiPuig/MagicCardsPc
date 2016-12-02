@@ -21,6 +21,7 @@ public class Controller{
     public ImageView ivDetail;
     public ListView lvColorsDetail;
     public TextArea taTextCard;
+    public TextArea taFlavor;
     @FXML
     private ComboBox cmbRarity;
     @FXML
@@ -191,6 +192,7 @@ public class Controller{
         }
 
         taTextCard.setText( c.getText() );
+        taFlavor.setText( c.getFlavor() );
 
 
     }

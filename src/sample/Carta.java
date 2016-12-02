@@ -11,6 +11,7 @@ public class Carta {
     private String color;
     private String imageUrl;
     private String text;
+    private String flavor;
 
     public String getName() {
         return name;
@@ -55,6 +56,10 @@ public class Carta {
     public String getText() { return text; }
 
     public void setText(String text) { this.text = text; }
+
+    public String getFlavor() { return flavor; }
+
+    public void setFlavor(String flavor) { this.flavor = flavor; }
 
     @Override
     public String toString() {

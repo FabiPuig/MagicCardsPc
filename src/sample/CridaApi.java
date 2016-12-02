@@ -104,6 +104,11 @@ public class CridaApi {
                 }else{
                     c.setText( null );
                 }
+                if( cartaJSON.has("flavor")){
+                    c.setFlavor( cartaJSON.getString("flavor") );
+                }else{
+                    c.setFlavor( null );
+                }
 
 
                 cartes.add( c );

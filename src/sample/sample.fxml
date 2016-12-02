@@ -79,6 +79,7 @@
                         </VBox>
                      </children>
                   </HBox>
+                  <TextArea fx:id="taFlavor" editable="false" prefHeight="200.0" prefWidth="200.0" />
                </children>
             </VBox>
          </children>
